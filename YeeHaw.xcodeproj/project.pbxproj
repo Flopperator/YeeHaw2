@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A32C42B2AF8B42100E5D402 /* YeehawApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A32C42A2AF8B42100E5D402 /* YeehawApp.swift */; };
+		4A32C42D2AF8B42100E5D402 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A32C42C2AF8B42100E5D402 /* ContentView.swift */; };
+		4A32C4322AF8B42400E5D402 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A32C4312AF8B42400E5D402 /* Preview Assets.xcassets */; };
+		4A32C4392AF8B4FA00E5D402 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A32C4382AF8B4F900E5D402 /* SignInView.swift */; };
+		4A32C43E2AF8B56A00E5D402 /* FormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A32C43D2AF8B56A00E5D402 /* FormField.swift */; };
+		4A32C4412AF8BB6700E5D402 /* ButtonModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A32C4402AF8BB6700E5D402 /* ButtonModifiers.swift */; };
+		4A6C437E2AF900530078F0CE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C437D2AF900530078F0CE /* ImagePicker.swift */; };
+		4A6C43812AF9134D0078F0CE /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C43802AF9134D0078F0CE /* UserModel.swift */; };
+		4A6C43832AF914230078F0CE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C43822AF914230078F0CE /* Extensions.swift */; };
+		4A6C43862AF918530078F0CE /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C43852AF918530078F0CE /* AuthService.swift */; };
+		4A6C43882AF9188C0078F0CE /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C43872AF9188C0078F0CE /* StorageService.swift */; };
+		4A6C438A2AF924220078F0CE /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C43892AF924220078F0CE /* SessionStore.swift */; };
+		4A6C438C2AF92B9B0078F0CE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C438B2AF92B9B0078F0CE /* HomeView.swift */; };
+		4A6C43902AF96C8C0078F0CE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C438F2AF96C8C0078F0CE /* Post.swift */; };
+		4A6C43942AF96CDC0078F0CE /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C43932AF96CDC0078F0CE /* Profile.swift */; };
+		4A6C43962AF96D030078F0CE /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C43952AF96D030078F0CE /* Main.swift */; };
+		4A6C439A2AFA71860078F0CE /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C43992AFA71860078F0CE /* PostModel.swift */; };
+		4A6C439C2AFA751B0078F0CE /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C439B2AFA751B0078F0CE /* PostService.swift */; };
+		4A6C439F2AFAAAEB0078F0CE /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4A6C439E2AFAAAEB0078F0CE /* SDWebImageSwiftUI */; };
+		4A6C43A32AFAAB490078F0CE /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C43A22AFAAB490078F0CE /* ProfileHeader.swift */; };
+		4A6C43A52AFAEA510078F0CE /* PostCardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C43A42AFAEA510078F0CE /* PostCardService.swift */; };
+		4A6C43A72AFAEF570078F0CE /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C43A62AFAEF570078F0CE /* ProfileService.swift */; };
+		4A6C43A92AFAF0B70078F0CE /* PostCardImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C43A82AFAF0B70078F0CE /* PostCardImage.swift */; };
+		4A6C43AB2AFAF3930078F0CE /* PostCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C43AA2AFAF3930078F0CE /* PostCard.swift */; };
+		4A758B062AFC3EE8001236B5 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A758B052AFC3EE8001236B5 /* SearchBar.swift */; };
+		4A758B082AFC584A001236B5 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A758B072AFC584A001236B5 /* SearchService.swift */; };
+		4A758B0A2AFC5AC0001236B5 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A758B092AFC5AC0001236B5 /* UserProfile.swift */; };
+		4A758B0C2AFC6647001236B5 /* FollowService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A758B0B2AFC6647001236B5 /* FollowService.swift */; };
+		4A758B0E2AFD53FD001236B5 /* FollowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A758B0D2AFD53FD001236B5 /* FollowButton.swift */; };
+		4A758B102AFD5787001236B5 /* UsersProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A758B0F2AFD5787001236B5 /* UsersProfileView.swift */; };
+		4A758B122AFF29A9001236B5 /* CommentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A758B112AFF29A9001236B5 /* CommentService.swift */; };
+		4A758B142AFF2A6B001236B5 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A758B132AFF2A6B001236B5 /* CommentModel.swift */; };
+		4A758B162AFFD00D001236B5 /* CommentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A758B152AFFD00D001236B5 /* CommentCard.swift */; };
+		4A758B182AFFD1E8001236B5 /* CommentInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A758B172AFFD1E8001236B5 /* CommentInput.swift */; };
+		4A758B1A2AFFD636001236B5 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A758B192AFFD636001236B5 /* CommentView.swift */; };
+		4A758B1C2B001819001236B5 /* EditProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A758B1B2B001819001236B5 /* EditProfile.swift */; };
+		4A758B1E2B005209001236B5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A758B1D2B005209001236B5 /* GoogleService-Info.plist */; };
+		4A758B202B0054CC001236B5 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A758B1F2B0054CC001236B5 /* Chat.swift */; };
+		4A758B222B0055E8001236B5 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A758B212B0055E8001236B5 /* Message.swift */; };
+		4A758B242B00568A001236B5 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A758B232B00568A001236B5 /* ChatService.swift */; };
+		4AC142732AF8E3750045B175 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC142722AF8E3750045B175 /* SignUpView.swift */; };
+		4AC1428E2AF8FD2D0045B175 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AC1428D2AF8FD2D0045B175 /* Assets.xcassets */; };
+		CAB8594EB9C88E2F5FA778D8 /* Pods_YeeHaw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD09523B8FADBDDB93918E7 /* Pods_YeeHaw.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0BEC1D74D662FB16649C8056 /* Pods-YeeHaw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YeeHaw.debug.xcconfig"; path = "Target Support Files/Pods-YeeHaw/Pods-YeeHaw.debug.xcconfig"; sourceTree = "<group>"; };
+		2DD09523B8FADBDDB93918E7 /* Pods_YeeHaw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YeeHaw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4056FCC74BAC62552EA2E890 /* Pods-YeeHaw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YeeHaw.release.xcconfig"; path = "Target Support Files/Pods-YeeHaw/Pods-YeeHaw.release.xcconfig"; sourceTree = "<group>"; };
+		4A32C4272AF8B42100E5D402 /* YeeHaw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YeeHaw.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A32C42A2AF8B42100E5D402 /* YeehawApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeehawApp.swift; sourceTree = "<group>"; };
+		4A32C42C2AF8B42100E5D402 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4A32C4312AF8B42400E5D402 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4A32C4382AF8B4F900E5D402 /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		4A32C43D2AF8B56A00E5D402 /* FormField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormField.swift; sourceTree = "<group>"; };
+		4A32C4402AF8BB6700E5D402 /* ButtonModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifiers.swift; sourceTree = "<group>"; };
+		4A6C437D2AF900530078F0CE /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		4A6C43802AF9134D0078F0CE /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		4A6C43822AF914230078F0CE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4A6C43852AF918530078F0CE /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		4A6C43872AF9188C0078F0CE /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		4A6C43892AF924220078F0CE /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		4A6C438B2AF92B9B0078F0CE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4A6C438F2AF96C8C0078F0CE /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		4A6C43932AF96CDC0078F0CE /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		4A6C43952AF96D030078F0CE /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		4A6C43992AFA71860078F0CE /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		4A6C439B2AFA751B0078F0CE /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		4A6C43A22AFAAB490078F0CE /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
+		4A6C43A42AFAEA510078F0CE /* PostCardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardService.swift; sourceTree = "<group>"; };
+		4A6C43A62AFAEF570078F0CE /* ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
+		4A6C43A82AFAF0B70078F0CE /* PostCardImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardImage.swift; sourceTree = "<group>"; };
+		4A6C43AA2AFAF3930078F0CE /* PostCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCard.swift; sourceTree = "<group>"; };
+		4A758B052AFC3EE8001236B5 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		4A758B072AFC584A001236B5 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		4A758B092AFC5AC0001236B5 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		4A758B0B2AFC6647001236B5 /* FollowService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowService.swift; sourceTree = "<group>"; };
+		4A758B0D2AFD53FD001236B5 /* FollowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowButton.swift; sourceTree = "<group>"; };
+		4A758B0F2AFD5787001236B5 /* UsersProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersProfileView.swift; sourceTree = "<group>"; };
+		4A758B112AFF29A9001236B5 /* CommentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentService.swift; sourceTree = "<group>"; };
+		4A758B132AFF2A6B001236B5 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
+		4A758B152AFFD00D001236B5 /* CommentCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCard.swift; sourceTree = "<group>"; };
+		4A758B172AFFD1E8001236B5 /* CommentInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentInput.swift; sourceTree = "<group>"; };
+		4A758B192AFFD636001236B5 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		4A758B1B2B001819001236B5 /* EditProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfile.swift; sourceTree = "<group>"; };
+		4A758B1D2B005209001236B5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4A758B1F2B0054CC001236B5 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		4A758B212B0055E8001236B5 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		4A758B232B00568A001236B5 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
+		4AC142722AF8E3750045B175 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		4AC1428D2AF8FD2D0045B175 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A32C4242AF8B42100E5D402 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A6C439F2AFAAAEB0078F0CE /* SDWebImageSwiftUI in Frameworks */,
+				CAB8594EB9C88E2F5FA778D8 /* Pods_YeeHaw.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47F3F7E49BD45280A82816A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BEC1D74D662FB16649C8056 /* Pods-YeeHaw.debug.xcconfig */,
+				4056FCC74BAC62552EA2E890 /* Pods-YeeHaw.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4A32C41E2AF8B42100E5D402 = {
+			isa = PBXGroup;
+			children = (
+				4A32C4292AF8B42100E5D402 /* YeeHaw */,
+				4A32C4282AF8B42100E5D402 /* Products */,
+				47F3F7E49BD45280A82816A3 /* Pods */,
+				EE08297D44048219660FAEC3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4A32C4282AF8B42100E5D402 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A32C4272AF8B42100E5D402 /* YeeHaw.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A32C4292AF8B42100E5D402 /* YeeHaw */ = {
+			isa = PBXGroup;
+			children = (
+				4A758B1D2B005209001236B5 /* GoogleService-Info.plist */,
+				4A6C43842AF9183C0078F0CE /* FirebaseServices */,
+				4A6C437F2AF913260078F0CE /* Models */,
+				4AC142742AF8E7240045B175 /* Utilities */,
+				4A32C43F2AF8BB3F00E5D402 /* Views */,
+				4A32C43C2AF8B55300E5D402 /* Components */,
+				4A32C42A2AF8B42100E5D402 /* YeehawApp.swift */,
+				4AC1428D2AF8FD2D0045B175 /* Assets.xcassets */,
+				4A32C4302AF8B42400E5D402 /* Preview Content */,
+			);
+			path = YeeHaw;
+			sourceTree = "<group>";
+		};
+		4A32C4302AF8B42400E5D402 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4A32C4312AF8B42400E5D402 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4A32C43C2AF8B55300E5D402 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4A32C42C2AF8B42100E5D402 /* ContentView.swift */,
+				4A32C43D2AF8B56A00E5D402 /* FormField.swift */,
+				4A32C4402AF8BB6700E5D402 /* ButtonModifiers.swift */,
+				4A6C43A22AFAAB490078F0CE /* ProfileHeader.swift */,
+				4A6C43A82AFAF0B70078F0CE /* PostCardImage.swift */,
+				4A6C43AA2AFAF3930078F0CE /* PostCard.swift */,
+				4A758B052AFC3EE8001236B5 /* SearchBar.swift */,
+				4A758B0D2AFD53FD001236B5 /* FollowButton.swift */,
+				4A758B152AFFD00D001236B5 /* CommentCard.swift */,
+				4A758B172AFFD1E8001236B5 /* CommentInput.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4A32C43F2AF8BB3F00E5D402 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A32C4382AF8B4F900E5D402 /* SignInView.swift */,
+				4AC142722AF8E3750045B175 /* SignUpView.swift */,
+				4A6C438B2AF92B9B0078F0CE /* HomeView.swift */,
+				4A6C438F2AF96C8C0078F0CE /* Post.swift */,
+				4A6C43932AF96CDC0078F0CE /* Profile.swift */,
+				4A6C43952AF96D030078F0CE /* Main.swift */,
+				4A758B092AFC5AC0001236B5 /* UserProfile.swift */,
+				4A758B0F2AFD5787001236B5 /* UsersProfileView.swift */,
+				4A758B192AFFD636001236B5 /* CommentView.swift */,
+				4A758B1B2B001819001236B5 /* EditProfile.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A6C437F2AF913260078F0CE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4A6C43802AF9134D0078F0CE /* UserModel.swift */,
+				4A6C43992AFA71860078F0CE /* PostModel.swift */,
+				4A758B132AFF2A6B001236B5 /* CommentModel.swift */,
+				4A758B1F2B0054CC001236B5 /* Chat.swift */,
+				4A758B212B0055E8001236B5 /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4A6C43842AF9183C0078F0CE /* FirebaseServices */ = {
+			isa = PBXGroup;
+			children = (
+				4A6C43852AF918530078F0CE /* AuthService.swift */,
+				4A6C43872AF9188C0078F0CE /* StorageService.swift */,
+				4A6C43892AF924220078F0CE /* SessionStore.swift */,
+				4A6C439B2AFA751B0078F0CE /* PostService.swift */,
+				4A6C43A42AFAEA510078F0CE /* PostCardService.swift */,
+				4A6C43A62AFAEF570078F0CE /* ProfileService.swift */,
+				4A758B072AFC584A001236B5 /* SearchService.swift */,
+				4A758B0B2AFC6647001236B5 /* FollowService.swift */,
+				4A758B112AFF29A9001236B5 /* CommentService.swift */,
+				4A758B232B00568A001236B5 /* ChatService.swift */,
+			);
+			path = FirebaseServices;
+			sourceTree = "<group>";
+		};
+		4AC142742AF8E7240045B175 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4A6C437D2AF900530078F0CE /* ImagePicker.swift */,
+				4A6C43822AF914230078F0CE /* Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EE08297D44048219660FAEC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DD09523B8FADBDDB93918E7 /* Pods_YeeHaw.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A32C4262AF8B42100E5D402 /* YeeHaw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A32C4352AF8B42400E5D402 /* Build configuration list for PBXNativeTarget "YeeHaw" */;
+			buildPhases = (
+				4E9981E11FA80FB5CFABED4B /* [CP] Check Pods Manifest.lock */,
+				4A32C4232AF8B42100E5D402 /* Sources */,
+				4A32C4242AF8B42100E5D402 /* Frameworks */,
+				4A32C4252AF8B42100E5D402 /* Resources */,
+				CF056F3220F3090263D14DC6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YeeHaw;
+			packageProductDependencies = (
+				4A6C439E2AFAAAEB0078F0CE /* SDWebImageSwiftUI */,
+			);
+			productName = Yeehaw;
+			productReference = 4A32C4272AF8B42100E5D402 /* YeeHaw.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A32C41F2AF8B42100E5D402 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					4A32C4262AF8B42100E5D402 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 4A32C4222AF8B42100E5D402 /* Build configuration list for PBXProject "YeeHaw" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A32C41E2AF8B42100E5D402;
+			packageReferences = (
+				4A6C439D2AFAAAEB0078F0CE /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
+			productRefGroup = 4A32C4282AF8B42100E5D402 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A32C4262AF8B42100E5D402 /* YeeHaw */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A32C4252AF8B42100E5D402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A32C4322AF8B42400E5D402 /* Preview Assets.xcassets in Resources */,
+				4AC1428E2AF8FD2D0045B175 /* Assets.xcassets in Resources */,
+				4A758B1E2B005209001236B5 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E9981E11FA80FB5CFABED4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YeeHaw-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF056F3220F3090263D14DC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YeeHaw/Pods-YeeHaw-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YeeHaw/Pods-YeeHaw-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YeeHaw/Pods-YeeHaw-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A32C4232AF8B42100E5D402 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A758B082AFC584A001236B5 /* SearchService.swift in Sources */,
+				4A6C43962AF96D030078F0CE /* Main.swift in Sources */,
+				4A758B162AFFD00D001236B5 /* CommentCard.swift in Sources */,
+				4A6C43942AF96CDC0078F0CE /* Profile.swift in Sources */,
+				4A6C43902AF96C8C0078F0CE /* Post.swift in Sources */,
+				4A32C43E2AF8B56A00E5D402 /* FormField.swift in Sources */,
+				4A6C43A92AFAF0B70078F0CE /* PostCardImage.swift in Sources */,
+				4A6C43832AF914230078F0CE /* Extensions.swift in Sources */,
+				4A758B142AFF2A6B001236B5 /* CommentModel.swift in Sources */,
+				4A758B222B0055E8001236B5 /* Message.swift in Sources */,
+				4A6C43AB2AFAF3930078F0CE /* PostCard.swift in Sources */,
+				4A32C42D2AF8B42100E5D402 /* ContentView.swift in Sources */,
+				4A758B1C2B001819001236B5 /* EditProfile.swift in Sources */,
+				4A758B242B00568A001236B5 /* ChatService.swift in Sources */,
+				4A6C43812AF9134D0078F0CE /* UserModel.swift in Sources */,
+				4A6C43A72AFAEF570078F0CE /* ProfileService.swift in Sources */,
+				4A32C4412AF8BB6700E5D402 /* ButtonModifiers.swift in Sources */,
+				4A32C4392AF8B4FA00E5D402 /* SignInView.swift in Sources */,
+				4A758B062AFC3EE8001236B5 /* SearchBar.swift in Sources */,
+				4A6C438C2AF92B9B0078F0CE /* HomeView.swift in Sources */,
+				4A758B1A2AFFD636001236B5 /* CommentView.swift in Sources */,
+				4A758B0A2AFC5AC0001236B5 /* UserProfile.swift in Sources */,
+				4A758B202B0054CC001236B5 /* Chat.swift in Sources */,
+				4A758B102AFD5787001236B5 /* UsersProfileView.swift in Sources */,
+				4A6C437E2AF900530078F0CE /* ImagePicker.swift in Sources */,
+				4A758B122AFF29A9001236B5 /* CommentService.swift in Sources */,
+				4A6C438A2AF924220078F0CE /* SessionStore.swift in Sources */,
+				4A6C43862AF918530078F0CE /* AuthService.swift in Sources */,
+				4A6C43A32AFAAB490078F0CE /* ProfileHeader.swift in Sources */,
+				4A6C439A2AFA71860078F0CE /* PostModel.swift in Sources */,
+				4A758B182AFFD1E8001236B5 /* CommentInput.swift in Sources */,
+				4A6C439C2AFA751B0078F0CE /* PostService.swift in Sources */,
+				4A758B0C2AFC6647001236B5 /* FollowService.swift in Sources */,
+				4A6C43A52AFAEA510078F0CE /* PostCardService.swift in Sources */,
+				4AC142732AF8E3750045B175 /* SignUpView.swift in Sources */,
+				4A758B0E2AFD53FD001236B5 /* FollowButton.swift in Sources */,
+				4A6C43882AF9188C0078F0CE /* StorageService.swift in Sources */,
+				4A32C42B2AF8B42100E5D402 /* YeehawApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4A32C4332AF8B42400E5D402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4A32C4342AF8B42400E5D402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A32C4362AF8B42400E5D402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BEC1D74D662FB16649C8056 /* Pods-YeeHaw.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Yeehaw/Preview Content\"";
+				DEVELOPMENT_TEAM = 9V6J342862;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Would you kindly allow us to take pictures? Pretty Please?";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Would you kindly allow us to access yer microphone?";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = QuadeWitt.YeeHaww;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4A32C4372AF8B42400E5D402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4056FCC74BAC62552EA2E890 /* Pods-YeeHaw.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Yeehaw/Preview Content\"";
+				DEVELOPMENT_TEAM = 9V6J342862;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Would you kindly allow us to take pictures? Pretty Please?";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Would you kindly allow us to access yer microphone?";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = QuadeWitt.YeeHaww;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A32C4222AF8B42100E5D402 /* Build configuration list for PBXProject "YeeHaw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A32C4332AF8B42400E5D402 /* Debug */,
+				4A32C4342AF8B42400E5D402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A32C4352AF8B42400E5D402 /* Build configuration list for PBXNativeTarget "YeeHaw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A32C4362AF8B42400E5D402 /* Debug */,
+				4A32C4372AF8B42400E5D402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4A6C439D2AFAAAEB0078F0CE /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4A6C439E2AFAAAEB0078F0CE /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A6C439D2AFAAAEB0078F0CE /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4A32C41F2AF8B42100E5D402 /* Project object */;
+}
